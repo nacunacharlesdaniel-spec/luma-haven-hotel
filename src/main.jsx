@@ -668,10 +668,6 @@ function App() {
                             'Where are reservations stored?',
                             'With Supabase configured, account and reservation records are stored in the Supabase database.',
                         ],
-                        [
-                            'Is this a real hotel booking system?',
-                            'No. This website does not process real bookings, payments, or hotel inventory.',
-                        ],
                     ].map(([q, a]) => (
                         <details key={q}>
                             <summary>

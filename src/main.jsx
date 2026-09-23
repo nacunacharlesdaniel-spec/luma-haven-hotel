@@ -327,7 +327,9 @@ function App() {
             });
 
         setMenu(false);
-    } return (
+    }
+
+    return (
         <div className="app">
             {toast && (
                 <div className="toast">
@@ -456,9 +458,7 @@ function App() {
                     <Clock3 />
                     <b>24/7</b> service concept
                 </span>
-            </div>
-
-            <section id="rooms" className="section">
+            </div>            <section id="rooms" className="section">
                 <div className="head">
                     <div>
                         <label>OUR ROOMS</label>
@@ -515,7 +515,7 @@ function App() {
                                             r.is_free_night
                                                 ? claim(r)
                                                 : note(
-                                                    'This room is available for browsing in the demo.'
+                                                    'This room is available for browsing.'
                                                 )
                                         }
                                     >
@@ -534,7 +534,7 @@ function App() {
 
             <section id="offer" className="offer">
                 <div className="offerText">
-                    <label>LIMITED DEMO OFFER</label>
+                    <label>LIMITED OFFER</label>
 
                     <h2>
                         One night.
@@ -650,7 +650,7 @@ function App() {
 
                     <p>
                         A few quick answers about the free-night
-                        demonstration.
+                        offer.
                     </p>
                 </div>
 
@@ -662,7 +662,7 @@ function App() {
                         ],
                         [
                             'Can different accounts claim the same room?',
-                            'Yes. Reservations belong to the user account, so different demonstration accounts can independently claim the same offer.',
+                            'Yes. Reservations belong to the user account, so different accounts can independently claim the same offer.',
                         ],
                         [
                             'Where are reservations stored?',
@@ -670,7 +670,7 @@ function App() {
                         ],
                         [
                             'Is this a real hotel booking system?',
-                            'No. This is a school demonstration and does not process real bookings, payments, or hotel inventory.',
+                            'No. This website does not process real bookings, payments, or hotel inventory.',
                         ],
                     ].map(([q, a]) => (
                         <details key={q}>
@@ -689,13 +689,14 @@ function App() {
                 <b>✦ LUMA HAVEN</b>
 
                 <span>
-                    © 2026 School demonstration project.
+                    © 2026 Luma Haven Hotel.
                 </span>
 
                 <button onClick={() => go('home')}>
                     Back to top ↑
                 </button>
             </footer>
+
             {modal === 'auth' && (
                 <div className="back">
                     <div className="modal">
@@ -721,7 +722,7 @@ function App() {
                         <p>
                             {mode === 'login'
                                 ? 'Sign in to continue with your reservation.'
-                                : 'Create a simple account for this demonstration.'}
+                                : 'Create a simple account to continue with your reservation.'}
                         </p>
 
                         <form onSubmit={auth}>
@@ -769,7 +770,7 @@ function App() {
                         </button>
 
                         <small>
-                            School demonstration authentication.
+                            Account authentication.
                             Do not use a real password.
                         </small>
                     </div>

@@ -768,11 +768,6 @@ function App() {
                                 ? 'Need an account? Sign up'
                                 : 'Already have an account? Sign in'}
                         </button>
-
-                        <small>
-                            Account authentication.
-                            Do not use a real password.
-                        </small>
                     </div>
                 </div>
             )}
